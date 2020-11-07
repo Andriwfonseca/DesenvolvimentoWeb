@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FilmesFlix</title>
+    <meta charset="Utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">    
+    <link rel="shortcut icon" href="assets/images/favicon2.ico" type="image/x-icon">
+</head>    
+<body>
+    <div class="topo" id="divTopo">
+        <div class="topo-int">
+            <div class="topo-esquerdo">
+                <ul>
+                    <li><a href="index.html"><strong>FilmesFlix</strong></a></li>
+                    <li><a href="lista-filmes.html">Filmes</a></li>
+                    <li><a href="lista-series.html">Séries</a></li>
+                    <li><a href="lista-animes.html">Animes</a></li>
+                </ul>
+            </div><!--topo-esquerdo-->
+            <div class="topo-direito">
+                <a href="tabela.html">Planos</a>
+                <a href="cadastro.html">Cadastre-se</a>    
+                <a href="login.html">Entrar</a>	
+            </div><!--topo-direito-->
+        </div><!--topo-int-->
+    </div><!--topo-->
+    <div class="topo-bemvindo">
+        <div class="conteudo-bemvindo">
+            <h2>Bem Vindo(a).</h2>
+            <h3>Milhões de Filmes, Séries e Animes para Descobrir. Explore já.</h3>
+            <div class="conteudo-pesquisar">
+                <div class="conteudo-barra-pesquisa">
+                    <input id="campo-busca" onkeypress="apertouEnter(event)" type="search" autofocus placeholder="Busca por um Filme, Série ou Anime..." />
+                   <input id="botao-pesquisar" type="button" value="Pesquisar" onclick="pesquisar()">
+                </div><!--"conteudo-barra-pesquisa"-->
+               -->
+            </div><!--conteudo-pesquisar-->
+        </div><!--conteudo-bemvindo-->            
+    </div><!--topo-bemvindo-->
+    <div id="div-conteudo" class="conteudo-os-mais-populares-filmes" style="min-height: 400px">
+        <div class="conteudo-populares-titulo">
+            <h1>Resultados da Pesquisa:</h1>
+            <section>
+            <div class="conteudo-listas-filmes">
+                <div class="lista-filmes" id="hardkill">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/724989?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/724989?language=pt-BR"><h3>Hard Kill</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="mulan">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/337401?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/72I82eKXCadZWEYygV9GkJOQNEq.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/337401?language=pt-BR"><h3>Mulan</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="santana">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/734309?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/9Rj8l6gElLpRL7Kj17iZhrT5Zuw.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/734309?language=pt-BR"><h3>Santana</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="origenssecretas">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/438396?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/t28nWRyiwT2cI0KwXYLPwnNltUV.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/438396?language=pt-BR"><h3>Origens Secretas</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="rogue">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/718444?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/uOw5JD8IlD546feZ6oxbIjvN66P.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/718444?language=pt-BR"><h3>Rogue</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="power">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/605116?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/38teDX74nsxkv2ysWvNT5EPXQ9E.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/605116?language=pt-BR"><h3>Power</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="after">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/613504?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/kiX7UYfOpYrMFSAGbI6j1pFkLzQ.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/613504?language=pt-BR"><h3>After</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="ava">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/539885?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/uobkkvvKCZbTKpJCMnvuTRQt5bV.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/539885?language=pt-BR"><h3>Ava</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="mortal">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/489326?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/aVbqhqYtlxwEGihTEhewZAgDOCX.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/489326?language=pt-BR"><h3>Mortal</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="infamous">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/movie/703134?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/q2lkJf1TAjImTHCEO7XvbqPtnPb.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/movie/703134?language=pt-BR"><h3>Infamous</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="theboys">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/76479?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/dzOxNbbz1liFzHU1IPvdgUR647b.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/76479?language=pt-BR"><h3>The Boys</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="lucifer">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/63174-lucifer?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/vn4K3hgtoDV2rIK6FfYK8ejn1tW.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/63174-lucifer?language=pt-BR"><h3>Lúcifer</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="cobrakai">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/77169?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/eTMMU2rKpZRbo9ERytyhwatwAjz.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/77169?language=pt-BR"><h3>Cobra Kai</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="os100">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/48866?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/cfhfcEt4bOXuVZkTC0nNBpqqiWb.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/48866?language=pt-BR"><h3>Os 100</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="sobrenatural">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/1622?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/ovFzkkKknAo2SbM2DfOabxRvzmy.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/1622?language=pt-BR"><h3>Sobrenatural</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="away">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/89233?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/uZKqLBIZcjaB5NEpFr4umT8ezoW.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/89233?language=pt-BR"><h3>Away</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="thegooddoctor">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/71712?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/ucMdbTpOhV75R0NtxqHEg4hirNl.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/71712?language=pt-BR"><h3>The Good Doctor</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="greysanatomy">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/1416?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/vfsUdzJ8t9s6TuDm1Ahm2f3ahtG.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/1416?language=pt-BR"><h3>Grey's Anatomy</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="lacasadepapel">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/71446?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w220_and_h330_face/zd8mxIfGY8SlupYd9XvK3qJL91B.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/71446?language=pt-BR"><h3>La Casa De Papel</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="gameofthrones">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/1399?language=pt-BR"><img class="image" src="http://image.tmdb.org/t/p/w220_and_h330_face/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/1399?language=pt-BR"><h3>Game Of Thrones</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="dragonballz">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/12971?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wUC8qdVZunTHFobx3bW44EYywfd.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/12971?language=pt-BR"><h3>Dragon Ball Z</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="dragonballsuper">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/62715?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/82RfjTfjdxxaIaqHJQl3wTDR4TO.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/62715?language=pt-BR"><h3>Dragon Ball Super</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="yugioh">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/902?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/eQudswX8mdPZxEoLM6ax9PsORDi.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/902?language=pt-BR"><h3>Yu-Gi-Oh</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="dragonball">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/12609?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/agrIHgxamHjRScCsqGhLxIcPXar.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/12609?language=pt-BR"><h3>Dragon Ball</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="dragonballgt">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/12697?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kmO4AHj1xx8wiaBMgwGjXhOQfNt.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/12697?language=pt-BR"><h3>Dragon Ball GT</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="naruto">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/46260?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vauCEnR7CiyBDzRCeElKkCaXIYu.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/46260?language=pt-BR"><h3>Naruto</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+                <div class="lista-filmes" id="narutoshippuden">
+                    <div class="div-image">
+                        <a href="https://www.themoviedb.org/tv/31910?language=pt-BR"><img class="image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/ic9Gb4Zz09ns3JPYHdax8u5kt0n.jpg"></a>
+                    </div><!--div-image--> 
+                    <div class="div-nome">
+                        <a href="https://www.themoviedb.org/tv/31910?language=pt-BR"><h3>Naruto Shippuden</h3></a>
+                    </div><!--div-nome-->                    
+                </div><!--lista-filmes-->
+            </div><!--conteudo-listas-filmes-->
+            </section>
+        </div><!--conteudo-populares-titulo-->    
+    </div><!--conteudo-os-mais-populares-filmes-->
+    
+
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/loadStorage.js"></script>
+    
+    <div class="rodape">
+    <!--Rodapé-->
+    <section>
+        <footer>
+            <br/><br/><br/>
+        Página criada apenas para estudos e não para fins lucrativos<br/>
+        Primeiro projeto para a disciplina do Adiel.<br/><br/>
+        </footer>
+    </section>
+    </div>    
+</body>
+</html>
